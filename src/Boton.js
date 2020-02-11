@@ -24,7 +24,8 @@ class Boton extends Component {
                      }} />    
                 
                 <button className="btnGuardar" onClick={()=> this.setState({siguiente: this.state.siguiente +1})}>Guardar</button>
-               
+               <button>otro boton</button>
+
             </React.Fragment>
 
         );
