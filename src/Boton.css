@@ -1,0 +1,44 @@
+.cajaTex{
+    justify-content: space-around;
+    display: flex;
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px; 
+    
+}
+
+.btnAtras{
+    width: 20%;
+    background-color: aqua;
+    display: inline-flexbox;
+    justify-content: space-between;
+    margin-left: 20px;
+  
+ 
+    
+}
+
+
+
+.btnSiguiente{
+    width: 20%;
+    background-color: aqua;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 50px;
+   
+}
+
+.btnGuardar{
+    width: 20%;
+    background-color: red;
+    display: block;
+    height: 40px;
+    margin-top: 150px;
+    margin-left: 100px;
+   
+    
+
+}
+
