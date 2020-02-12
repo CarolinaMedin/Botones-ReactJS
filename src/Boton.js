@@ -9,24 +9,39 @@ class Boton extends Component {
         this.state = {  }
     }
     render() { 
+        function capturar(){
+
+   
+    let box =document.getElementById("cajaTexto").value;
+
+ 
+    document.getElementById("resultado").innerHTML=" \
+    <br/>"+box;
+}
         return ( 
             
-            <React.Fragment className="caja">
-                 
-            <input className="cajaTex" placeholder="ingresa texto" id="cajaTexto"></input>
-                
-                <input type="reset" className="btnAtras" href="javascript:history.go(-1)" value="Volver Atrás" onclick="history.back()" onClick={()=>{
-               alert("esta en uso")
-                     }} />
+        <React.Fragment>
 
-                <input type="button" className="btnSiguiente" href="javascript:history.go(1)" value="Siguiente" onclick="history.back()" onClick={()=>{
+           
+
+            <form id="form1">
+            Lista:<br/>     
+            <input type="text" className="cajaTex" placeholder="ingresa texto" id="cajaTexto" name=""  />
+          
+
+           
+            <input type="Reset" className="btnAtras" />
+         
+
+            <input type="button" className="btnSiguiente" href="javascript:history.go(1)" value="Siguiente" onclick="history.back()" onClick={()=>{
                alert("esta en uso")
                      }} />    
                 
-                <button className="btnGuardar" onClick={()=> this.setState({siguiente: this.state.siguiente +1})}>Guardar</button>
-              
+            <input type="button" value="guardar" className="btnGuardar" onclick="capturar()"/>
 
-            </React.Fragment>
+            </form>
+
+        </React.Fragment>
 
         );
     }
