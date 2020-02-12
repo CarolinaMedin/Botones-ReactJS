@@ -15,7 +15,7 @@ class Boton extends Component {
                  
             <input className="cajaTex" placeholder="ingresa texto" id="cajaTexto"></input>
                 
-                <input type="button" className="btnAtras" href="javascript:history.go(-1)" value="Volver Atrás" onclick="history.back()" onClick={()=>{
+                <input type="reset" className="btnAtras" href="javascript:history.go(-1)" value="Volver Atrás" onclick="history.back()" onClick={()=>{
                alert("esta en uso")
                      }} />
 
@@ -24,7 +24,7 @@ class Boton extends Component {
                      }} />    
                 
                 <button className="btnGuardar" onClick={()=> this.setState({siguiente: this.state.siguiente +1})}>Guardar</button>
-               <button>otro boton</button>
+              
 
             </React.Fragment>
 
